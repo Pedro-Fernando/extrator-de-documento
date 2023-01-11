@@ -23,9 +23,9 @@ def callback(ch, method, properties, body):
     documento = json.loads(body)
     d = Documento(**documento)
 
-    # print(d.id_documento)
-    # print(d.id_produto)
-    print('\n '.join(d.texto_documento_extraido))
+    print(d.id_documento)
+    print(d.id_produto)
+    print(d.texto_documento_extraido)
 
 
 conexao.canal.basic_consume(queue=NOME_FILA_PARA_EXTRACOES, on_message_callback=callback, auto_ack=True)

@@ -9,4 +9,4 @@ wget -O ./tessdata/eng.traineddata https://github.com/tesseract-ocr/tessdata/blo
 deve ser instalado a linguagem em português
 ~~~cmd
  sudo apt-get install tesseract-ocr-por
-~~
+~~~
