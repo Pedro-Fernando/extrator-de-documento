@@ -113,3 +113,7 @@ class AzOptipy:
         else:
             raise ValueError("extensão nao Identificada.")
 
+    def image_to_pdf_searchable(self):
+        pdf = pytesseract.image_to_pdf_or_hocr(self._path, extension='pdf')
+        with open('test.pdf', 'w+b') as f:
+            f.write(pdf)  # pdf type is bytes by default
