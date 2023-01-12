@@ -8,7 +8,6 @@ class TxtReader:
         try:
             with open(self.path, "r") as f:
                 self.text = f.read()
-            print("Texto lido com sucesso.")
         except Exception as e:
             print(f"Erro ao ler arquivo: {e}")
 

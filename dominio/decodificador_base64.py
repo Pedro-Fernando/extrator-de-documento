@@ -13,10 +13,6 @@ class Base64ToPDF:
     def get_pdf_bytes(pdf_base64):
         return _get_base64_to_pdf_bytes(pdf_base64)
 
-    @staticmethod
-    def get_pdf_to_images(pdf_base64):
-        pdf_bytes = _get_base64_to_pdf_bytes(pdf_base64)
-
 
 class PDF2Images:
 

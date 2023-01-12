@@ -20,7 +20,7 @@ class ImagemProcessor:
 
     @staticmethod
     def img_color_rgb(imagem):
-        imagem_em_rgb = cv2.cvtColor(imagem, cv2.COLOR_BGR2BGR)
+        imagem_em_rgb = cv2.cvtColor(imagem, cv2.COLOR_BGR2BGRA)
         # _exibir_imagem(imagem_em_rgb)
         return imagem_em_rgb
 
