@@ -15,7 +15,8 @@ from dominio.az_optipy.imagem_processor import ImagemProcessor
 from dominio.readers.reader import TxtReader
 
 # todo problema no caminho do tessdata
-CONFIG_TESSERACT = '--tessdata-dir tessdata --psm 4'
+# CONFIG_TESSERACT = '--tessdata-dir tessdata --psm 4'
+CONFIG_TESSERACT = '--psm 4'
 NIVEL_DE_CONFIANCA = 40
 
 
@@ -56,6 +57,11 @@ def _process_img(path: str) -> str:
     return pytesseract.image_to_string(imagem_tratada, lang='por')
 
 
+def _get_extension_header(cabecalho):
+    file_type, encoding = cabecalho.split(":")[1].split(";")
+    return file_type.split('/')[1]
+
+
 def _process_base64(path: str) -> Union[Tuple[str, bytes], ValueError]:
     try:
         reader = TxtReader(path)
@@ -63,10 +69,8 @@ def _process_base64(path: str) -> Union[Tuple[str, bytes], ValueError]:
         texto_base64 = reader.text
 
         cabecalho, encoded_data = texto_base64.split(",", 1)
-        # Removendo o cabeçalho do tipo de arquivo
-        file_type, encoding = cabecalho.split(":")[1].split(";")
-        extension = file_type.split('/')[1]
-        # Decodificando os dados
+        extension = _get_extension_header(cabecalho)
+
         decoded_data = base64.b64decode(encoded_data)
 
         return extension, decoded_data
