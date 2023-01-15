@@ -1,4 +1,4 @@
-from mensageria.connection_rabbitmq import ConnectionRabbitMQ
+from infra.mensageria.connection_rabbitmq import ConnectionRabbitMQ
 
 
 def _callback_default(ch, method, properties, body):
