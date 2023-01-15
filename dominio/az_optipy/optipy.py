@@ -48,7 +48,6 @@ class AzOptipy:
         is_img = self._type_file == FileType.IMG
 
         try:
-            
             if is_pdf:
                 return _apply_ocr_in_images(self._images)
             elif is_img:
