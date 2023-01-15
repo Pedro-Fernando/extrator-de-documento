@@ -1,4 +1,4 @@
-from dominio.documento import Documento
+from dominio.entity.documento import Documento
 from infra.logger.logger import Logger
 from infra.mensageria.consumer import Consumer
 from infra.mensageria.publisher import Publisher
@@ -21,7 +21,7 @@ def _callback_para_extracoes(ch, method, properties, body):
 
     d = Documento.converter_para_documento(body)
 
-    log.info(f'publicando documento id: {d.id_documento}, para fila de extraídos.')
+    log.info(f'publicando documento id: {d.id_documento}, do produto id: {d.id_produto} para fila de extraídos.')
 
     publisher.publish(NOME_EXCHANGE_EXTRAIDOS, TAG_EXTRAIDOS, body)
     publisher.close()

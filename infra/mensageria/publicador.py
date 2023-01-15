@@ -1,7 +1,7 @@
 import json
 
 from dominio.az_optipy.optipy import AzOptipy
-from dominio.documento import Documento
+from dominio.entity.documento import Documento
 from dominio.readers.reader_img import ImgReader
 from dominio.readers.reader_pdf import PDFReader
 from dominio.readers.reader_txt import Base64Reader
