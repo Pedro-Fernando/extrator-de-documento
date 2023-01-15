@@ -1,0 +1,8 @@
+2023-01-15 16:21:25,437 - az_optipy - INFO - Iniciando Consumidor da fila de extrações.
+2023-01-15 16:21:31,983 - az_optipy - INFO - Iniciando Consumidor da fila de extraídos.
+2023-01-15 16:21:43,684 - az_optipy - INFO - publicando documento id: 1, do produto id: 6 para fila de extraídos.
+2023-01-15 16:21:43,686 - az_optipy - INFO - consumindo documento id: 1, do produto id: 6 para fila de extraídos.
+2023-01-15 16:21:44,252 - az_optipy - INFO - publicando documento id: 2, do produto id: 6 para fila de extraídos.
+2023-01-15 16:21:44,253 - az_optipy - INFO - consumindo documento id: 2, do produto id: 6 para fila de extraídos.
+2023-01-15 16:21:45,689 - az_optipy - INFO - publicando documento id: 3, do produto id: 6 para fila de extraídos.
+2023-01-15 16:21:45,690 - az_optipy - INFO - consumindo documento id: 3, do produto id: 6 para fila de extraídos.
