@@ -8,19 +8,12 @@ from dominio.readers.reader import Reader
 from dominio.enums.types import FileType
 
 
-class TxtReader(Reader):
-    def __init__(self, path):
-        self._path = path
-        self._text = None
-
-        try:
-            with open(self._path, "r") as f:
-                self._text = f.read()
-        except Exception as e:
-            print(f"Erro ao ler arquivo de texto: {e}")
+class Base64Reader(Reader):
+    def __init__(self, base):
+        self._base = base
 
     def get_images_for_OCR(self):
-        return _precess_txt_base64_ocr(self._text)
+        return _precess_base64_ocr(self._base)
 
 
 def _get_extension_header(cabecalho):
@@ -40,9 +33,7 @@ def _break_apart_base64(texto_base64: str) -> Union[Tuple[str, bytes], ValueErro
         print(f"Erro ao extrair informações do base64: {e}")
 
 
-def _precess_txt_base64_ocr(texto):
-    texto_base64 = texto
-
+def _precess_base64_ocr(texto_base64):
     extension, decoded_data = _break_apart_base64(texto_base64)
 
     is_extensao_pdf = extension == FileType.PDF.value

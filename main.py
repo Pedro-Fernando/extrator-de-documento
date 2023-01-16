@@ -16,13 +16,12 @@ log = Logger('az_optipy')
 
 
 def _callback_para_extracoes(ch, method, properties, body):
-    publisher = Publisher(IP_ADDRESS_CONTAINER_RABBITMQ)
-    publisher.connect()
-
     d = Documento.converter_para_documento(body)
+    log.info(f'Consumido o documento id: {d.id_documento}, do produto id: {d.id_produto} na fila de extrações.')
 
     log.info(f'publicando documento id: {d.id_documento}, do produto id: {d.id_produto} para fila de extraídos.')
-
+    publisher = Publisher(IP_ADDRESS_CONTAINER_RABBITMQ)
+    publisher.connect()
     publisher.publish(NOME_EXCHANGE_EXTRAIDOS, TAG_EXTRAIDOS, body)
     publisher.close()
 
