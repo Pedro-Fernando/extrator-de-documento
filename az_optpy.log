@@ -1,11 +1,14 @@
-2023-01-16 10:14:07,084 - az_optipy - INFO - Iniciando Consumidor da fila de extrações.
-2023-01-16 10:14:13,295 - az_optipy - INFO - Iniciando Consumidor da fila de extraídos.
-2023-01-16 10:14:31,510 - az_optipy - INFO - Consumido o documento id: 1, do produto id: 6 na fila de extrações.
-2023-01-16 10:14:31,510 - az_optipy - INFO - publicando documento id: 1, do produto id: 6 para fila de extraídos.
-2023-01-16 10:14:31,515 - az_optipy - INFO - consumindo documento id: 1, do produto id: 6 para fila de extraídos.
-2023-01-16 10:14:32,075 - az_optipy - INFO - Consumido o documento id: 2, do produto id: 6 na fila de extrações.
-2023-01-16 10:14:32,075 - az_optipy - INFO - publicando documento id: 2, do produto id: 6 para fila de extraídos.
-2023-01-16 10:14:32,081 - az_optipy - INFO - consumindo documento id: 2, do produto id: 6 para fila de extraídos.
-2023-01-16 10:14:33,473 - az_optipy - INFO - Consumido o documento id: 3, do produto id: 6 na fila de extrações.
-2023-01-16 10:14:33,473 - az_optipy - INFO - publicando documento id: 3, do produto id: 6 para fila de extraídos.
-2023-01-16 10:14:33,479 - az_optipy - INFO - consumindo documento id: 3, do produto id: 6 para fila de extraídos.
+2023-01-16 10:38:43,353 - az_optipy - INFO - Iniciando Consumidor da fila de extrações.
+2023-01-16 10:38:57,864 - az_optipy - INFO - Iniciando Consumidor da fila de extraídos.
+2023-01-16 10:39:04,915 - az_optipy - INFO - Consumido o documento id: 1, do produto id: 6 na fila de extrações.
+2023-01-16 10:39:04,915 - az_optipy - INFO - publicando documento id: 1, do produto id: 6 para fila de extraídos.
+2023-01-16 10:39:04,922 - az_optipy - INFO - consumindo documento id: 1, do produto id: 6 para fila de extraídos.
+2023-01-16 10:39:05,473 - az_optipy - INFO - Consumido o documento id: 2, do produto id: 6 na fila de extrações.
+2023-01-16 10:39:05,473 - az_optipy - INFO - publicando documento id: 2, do produto id: 6 para fila de extraídos.
+2023-01-16 10:39:05,478 - az_optipy - INFO - consumindo documento id: 2, do produto id: 6 para fila de extraídos.
+2023-01-16 10:39:06,862 - az_optipy - INFO - Consumido o documento id: 3, do produto id: 6 na fila de extrações.
+2023-01-16 10:39:06,862 - az_optipy - INFO - publicando documento id: 3, do produto id: 6 para fila de extraídos.
+2023-01-16 10:39:06,867 - az_optipy - INFO - consumindo documento id: 3, do produto id: 6 para fila de extraídos.
+2023-01-16 10:39:08,145 - az_optipy - INFO - Consumido o documento id: 4, do produto id: 6 na fila de extrações.
+2023-01-16 10:39:08,145 - az_optipy - INFO - publicando documento id: 4, do produto id: 6 para fila de extraídos.
+2023-01-16 10:39:08,151 - az_optipy - INFO - consumindo documento id: 4, do produto id: 6 para fila de extraídos.
